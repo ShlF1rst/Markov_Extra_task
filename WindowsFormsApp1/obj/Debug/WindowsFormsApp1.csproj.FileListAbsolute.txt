@@ -1,0 +1,10 @@
+E:\Markov_Extra_task\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\Markov_Extra_task\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\Markov_Extra_task\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\Markov_Extra_task\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+E:\Markov_Extra_task\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\Markov_Extra_task\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Markov_Extra_task\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\Markov_Extra_task\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\Markov_Extra_task\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\Markov_Extra_task\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
