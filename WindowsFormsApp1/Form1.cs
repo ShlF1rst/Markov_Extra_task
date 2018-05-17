@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             int left = 20;
-            int top = 100;
+            int top = 110;
             int.TryParse(count_of_ch.Text, out count);
             tbs1 = new TextBox[100];
             tbs2 = new TextBox[100];
@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(textBox3);
             this.Controls.Add(label5);
             this.Controls.Add(label6);
-
+            this.Controls.Add(label7);
 
             for (int i = 0; i < count; i++)
             {
@@ -79,29 +79,29 @@ namespace WindowsFormsApp1
             bool check = false;
             string word = textBox1.Text;
             string prom = word;
-            int last_pos = -1;
-            int last_ind = -1;
-            int pos = -1;
             int ind = -1;
+            if (word == "eps")
+                word = "";
             while (true)
             {
-               
-
+                int j = 0;
+                j++;
                 for (int i = 0; i < count; i++)
                 {
                     ind = word.IndexOf(tbs1[i].Text);
+                    if (tbs1[i].Text == "eps")
+                        ind = 0;
                     if (ind != -1)
                     {
-                        pos = i;
+                       
                         check = true;
-                        if ((last_pos == pos) && (last_ind == ind))
+                        if (j>=500)
                         {
                             word = "Эта подстановка не выполнима на этом слове - происходит зацикливание.";
                             check = false;
                             break;
                         }
-                        last_pos = pos;
-                        last_ind = ind;
+                        
 
                         string ins = tbs2[i].Text;
                         if (ins.IndexOf('.') == 0)
@@ -109,8 +109,10 @@ namespace WindowsFormsApp1
                             ins = ins.Remove(0, 1);
                             check = false;
                         }
-                        word = word.Remove(ind, tbs1[i].Text.Length);
-                        word = word.Insert(ind, ins);
+                        if (tbs1[i].Text != "eps")
+                            word = word.Remove(ind, tbs1[i].Text.Length);
+                        if (ins!="eps")
+                            word = word.Insert(ind, ins);
                         prom += " ---> " + word;
                         break;
                     }
